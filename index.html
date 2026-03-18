@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ТСПК – Прием 2026 | Инклюзивное образование + инструкция</title>
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bs-primary: #4988C4;
+            --bs-primary-dark: #1C4D8D;
+            --bs-accent: #ffc107;
+            --bs-light-bg: #f8fbfe;
+        }
+
+        body {
+            background-color: #ffffff;
+            color: #1e2a37;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.5;
+            padding-top: 80px;
+        }
+
+        @media (max-width: 991px) {
+            body {
+                padding-top: 70px;
+            }
+        }
+
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.95) !important;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 20px rgba(11, 79, 108, 0.05);
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            color: var(--bs-primary) !important;
+            letter-spacing: -0.02em;
+        }
+
+        .hero {
+            position: relative;
+            padding: 3rem 0 4rem 0;
+            border-bottom: 1px solid rgba(11, 79, 108, 0.1);
+            background: url(img/hero.jpg) center center / cover no-repeat;
+            color: white;
+            isolation: isolate;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 40, 60, 0.6);
+            z-index: 1;
+        }
+
+        .hero .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            color: white;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero .lead {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .badge-equip {
+            background: linear-gradient(145deg, var(--bs-primary), #0d5f80);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 60px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            box-shadow: 0 10px 20px rgba(11, 79, 108, 0.25);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            white-space: nowrap;
+        }
+
+        @media (max-width: 576px) {
+            .badge-equip {
+                white-space: normal;
+                font-size: 0.85rem;
+                padding: 0.6rem 1rem;
+            }
+        }
+
+        .timeline-cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .timeline-card {
+            flex: 1 1 140px;
+            min-width: 120px;
+            background: white;
+            border-radius: 32px;
+            padding: 1.2rem 0.5rem;
+            text-align: center;
+            box-shadow: 0 12px 30px rgba(0, 30, 40, 0.06);
+            border: 1px solid rgba(11, 79, 108, 0.1);
+            transition: all 0.25s ease;
+            cursor: pointer;
+        }
+
+        .timeline-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--bs-primary);
+            box-shadow: 0 20px 30px -8px rgba(11, 79, 108, 0.15);
+        }
+
+        .timeline-card.active {
+            border: 2px solid var(--bs-primary);
+            background: #ecf6fc;
+            transform: scale(1.02);
+        }
+
+        .timeline-card .day {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--bs-primary);
+            line-height: 1.2;
+        }
+
+        .timeline-card .month {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #3f5565;
+            font-weight: 600;
+        }
+
+        .timeline-card .desc {
+            font-size: 0.8rem;
+            margin-top: 0.4rem;
+            font-weight: 600;
+            color: #0a3140;
+        }
+
+        .trackbar-container {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(8px);
+            border-radius: 48px;
+            padding: 2rem 1.5rem;
+            box-shadow: 0 20px 45px -8px rgba(11, 79, 108, 0.15);
+            margin: 2rem 0 3rem 0;
+            border: 1px solid rgba(255, 255, 255, 0.7);
+        }
+
+        .form-range {
+            height: 10px;
+            background: linear-gradient(90deg, var(--bs-primary) 0%, var(--bs-primary) 0%, #dee2e6 0%, #dee2e6 100%);
+            border-radius: 40px;
+        }
+
+        .form-range::-webkit-slider-thumb {
+            width: 28px;
+            height: 28px;
+            background: white;
+            border: 3px solid var(--bs-primary);
+            box-shadow: 0 6px 14px rgba(11, 79, 108, 0.4);
+        }
+
+        .event-detail-card {
+            background: #ffffffcc;
+            backdrop-filter: blur(4px);
+            border-radius: 32px;
+            padding: 1.8rem;
+            margin-top: 2rem;
+            border-left: 8px solid var(--bs-primary);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.02);
+        }
+
+        @media (max-width: 576px) {
+            .event-detail-card .display-5 {
+                font-size: 2rem;
+            }
+
+            .event-detail-card {
+                padding: 1.2rem;
+            }
+        }
+
+        .info-card {
+            background: white;
+            border-radius: 32px;
+            padding: 1.8rem;
+            height: 100%;
+            box-shadow: 0 15px 30px rgba(11, 79, 108, 0.03);
+            border: 1px solid rgba(11, 79, 108, 0.1);
+            transition: all 0.2s;
+        }
+
+        .info-card:hover {
+            border-color: var(--bs-primary);
+            box-shadow: 0 20px 35px rgba(11, 79, 108, 0.1);
+        }
+
+        .btn-primary-custom {
+            background: var(--bs-primary);
+            border: none;
+            color: white;
+            padding: 0.75rem 2rem;
+            border-radius: 60px;
+            font-weight: 600;
+            box-shadow: 0 15px 25px -8px rgba(11, 79, 108, 0.4);
+            transition: all 0.2s;
+            white-space: nowrap;
+        }
+
+        @media (max-width: 576px) {
+            .btn-primary-custom {
+                white-space: normal;
+                padding: 0.6rem 1.2rem;
+                font-size: 0.9rem;
+            }
+        }
+
+        .btn-primary-custom:hover {
+            background: var(--bs-primary-dark);
+            transform: scale(1.02);
+        }
+
+
+
+        .section-title {
+            font-weight: 800;
+            color: var(--bs-primary);
+            margin-bottom: 1.5rem;
+            position: relative;
+            display: inline-block;
+            letter-spacing: -0.3px;
+        }
+
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 90px;
+            height: 4px;
+            background: linear-gradient(to right, #4988C4, #0F2854);
+            ;
+            border-radius: 4px;
+        }
+
+        .specialty-card {
+            background: white;
+            border-radius: 28px;
+            padding: 1.5rem;
+            border: 1px solid rgba(11, 79, 108, 0.1);
+            transition: 0.15s;
+            height: 100%;
+        }
+
+        .photo-grid img {
+            border-radius: 28px;
+            object-fit: cover;
+            width: 100%;
+            height: 200px;
+            box-shadow: 0 15px 25px -5px rgba(11, 79, 108, 0.2);
+            border: 2px solid white;
+        }
+
+        @media (max-width: 480px) {
+            .timeline-card .day {
+                font-size: 1.5rem;
+            }
+
+            .timeline-card .desc {
+                font-size: 0.7rem;
+            }
+
+            .trackbar-container .d-flex.justify-content-between span {
+                font-size: 0.7rem;
+            }
+        }
+
+        .inclusive-icon {
+            font-size: 2.5rem;
+            color: var(--bs-primary);
+        }
+
+        .step-card {
+            background: white;
+            border-radius: 32px;
+            padding: 1.8rem 1.2rem;
+            height: 100%;
+            box-shadow: 0 15px 30px rgba(11, 79, 108, 0.05);
+            border: 1px solid rgba(11, 79, 108, 0.1);
+            transition: transform 0.2s;
+            text-align: center;
+        }
+
+        .step-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--bs-primary);
+        }
+
+        .step-number {
+            width: 50px;
+            height: 50px;
+            background: var(--bs-primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin: 0 auto 1rem auto;
+            box-shadow: 0 10px 15px -3px rgba(11, 79, 108, 0.3);
+        }
+
+        .step-card h4 {
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+            color: var(--bs-primary);
+        }
+
+        .step-card p {
+            color: #3f5565;
+            margin-bottom: 0;
+            font-size: 0.95rem;
+        }
+
+        .footer {
+            background: #0F2854;
+            color: #ffffff;
+            padding: 40px 0;
+        }
+
+        .footer a {
+            color: #000000;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Навигация fixed-top (обновлён порядок: сначала Как поступить, потом Таймлайн) -->
+    <nav class="navbar navbar-expand-lg py-3 fixed-top">
+        <div class="container">
+            <a class="navbar-brand fs-3" href="#">
+                <img src="img/Logo_TSPK.png" class="img-fluid" alt="">ТСПК | 2026
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMain">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link px-3 fw-medium" href="#steps">Как поступить</a></li>
+                    <li class="nav-item"><a class="nav-link px-3 fw-medium" href="#timeline">Таймлайн</a></li>
+                    <li class="nav-item"><a class="nav-link px-3 fw-medium" href="#howto">Подача</a></li>
+                    <li class="nav-item"><a class="nav-link px-3 fw-medium" href="#docs">Документы</a></li>
+                    <li class="nav-item"><a class="nav-link px-3 fw-medium" href="#specialties">Специальности</a></li>
+                    <li class="nav-item"><a class="nav-link px-3 fw-medium" href="#inclusive">Инклюзия</a></li>
+                    <li class="nav-item"><a class="nav-link px-3 fw-medium" href="#contacts">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero блок с фоновым изображением -->
+    
+
+    <div class="container">
+        <!-- БЛОК "КАК ПОСТУПИТЬ" (теперь первый) -->
+        <!-- БЛОК "КАК ПОСТУПИТЬ" в виде пути -->
+        <!-- БЛОК "КАК ПОСТУПИТЬ" в виде дорожной карты -->
+        <section id="steps" class="my-5 pt-2">
+            <h2 class="section-title display-6">Как поступить в ТСПК</h2>
+            <p class="text-secondary mb-5">Следуй по маршруту — каждый этап приближает к зачислению</p>
+
+            <!-- Контейнер дорожной карты -->
+            <div class="roadmap">
+                <!-- Верхний ряд: описания нечётных шагов (1, 3, 5) -->
+                <div class="roadmap-row roadmap-row-top">
+                    <div class="roadmap-item" data-step="1">
+                        <div class="step-card">
+                            <span class="step-number">1</span>
+                            <h4>Выбор специальности</h4>
+                            <p>Изучи список направлений и выбери то, что тебе по душе. Обрати внимание на форму
+                                обучения.</p>
+                        </div>
+                    </div>
+                    <div class="roadmap-item" data-step="3">
+                        <div class="step-card">
+                            <span class="step-number">3</span>
+                            <h4>Отслеживание рейтинга</h4>
+                            <p>Следи за конкурсной ситуацией в списках абитуриентов. При необходимости подай оригинал
+                                аттестата.</p>
+                        </div>
+                    </div>
+                    <div class="roadmap-item" data-step="5">
+                        <div class="step-card">
+                            <span class="step-number">5</span>
+                            <h4>Orientation day</h4>
+                            <p>После зачисления приходи на день первокурсника, познакомься с группой и преподавателями.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Средний ряд: линия с маркерами -->
+                <div class="roadmap-row roadmap-row-line">
+                    <div class="line-container">
+                        <div class="line-marker" data-step="1"></div>
+                        <div class="line-marker" data-step="2"></div>
+                        <div class="line-marker" data-step="3"></div>
+                        <div class="line-marker" data-step="4"></div>
+                        <div class="line-marker" data-step="5"></div>
+                    </div>
+                </div>
+
+                <!-- Нижний ряд: описания чётных шагов (2, 4) -->
+                <div class="roadmap-row roadmap-row-bottom">
+                    <div class="roadmap-item" data-step="2">
+                        <div class="step-card">
+                            <span class="step-number">2</span>
+                            <h4>Подача документов</h4>
+                            <p>Собери необходимые документы и подай заявление лично, почтой или онлайн до указанных
+                                сроков.</p>
+                        </div>
+                    </div>
+                    <div class="roadmap-item" data-step="4">
+                        <div class="step-card">
+                            <span class="step-number">4</span>
+                            <h4>Вступительные испытания</h4>
+                            <p>Пройди творческие или профессиональные экзамены (если они предусмотрены для твоей
+                                специальности).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <style>
+            /* Стили для дорожной карты */
+            .roadmap {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                margin-top: 2rem;
+            }
+
+            .roadmap-row {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                position: relative;
+            }
+
+            .roadmap-row-top .roadmap-item {
+                flex: 1;
+                text-align: center;
+                max-width: 200px;
+            }
+
+            .roadmap-row-bottom .roadmap-item {
+                flex: 1;
+                text-align: center;
+                max-width: 200px;
+            }
+
+            /* Для выравнивания чётных шагов по центру между маркерами */
+            .roadmap-row-bottom {
+                justify-content: space-around;
+                padding: 0 1rem;
+            }
+
+            .roadmap-row-top {
+                justify-content: space-around;
+                padding: 0 1rem;
+            }
+
+            /* Карточка шага */
+            .step-card {
+                background: white;
+                border-radius: 28px;
+                padding: 1.2rem;
+                box-shadow: 0 15px 30px rgba(11, 79, 108, 0.05);
+                border: 1px solid rgba(11, 79, 108, 0.1);
+                transition: transform 0.2s;
+            }
+
+            .step-card:hover {
+                transform: translateY(-5px);
+                border-color: var(--bs-primary);
+            }
+
+            .step-card .step-number {
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+                background: var(--bs-primary);
+                color: white;
+                border-radius: 50%;
+                font-size: 1.4rem;
+                font-weight: 700;
+                line-height: 40px;
+                text-align: center;
+                margin-bottom: 0.8rem;
+            }
+
+            .step-card h4 {
+                font-weight: 700;
+                font-size: 1.1rem;
+                margin-bottom: 0.5rem;
+                color: var(--bs-primary);
+            }
+
+            .step-card p {
+                font-size: 0.85rem;
+                color: #3f5565;
+                margin-bottom: 0;
+            }
+
+            /* Линия с маркерами */
+            .roadmap-row-line {
+                position: relative;
+                padding: 1.5rem 0;
+            }
+
+            .line-container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                position: relative;
+            }
+
+            /* Горизонтальная линия */
+            .line-container::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 0;
+                right: 0;
+                height: 3px;
+                background: var(--bs-primary);
+                transform: translateY(-50%);
+                z-index: 1;
+                opacity: 0.3;
+            }
+
+            .line-marker {
+                width: 20px;
+                height: 20px;
+                background: var(--bs-primary);
+                border: 3px solid white;
+                border-radius: 50%;
+                position: relative;
+                z-index: 2;
+                box-shadow: 0 4px 10px rgba(11, 79, 108, 0.3);
+                cursor: default;
+            }
+
+            /* Линии от маркеров к карточкам (только для десктопа) */
+            @media (min-width: 768px) {
+                .roadmap-row-top .roadmap-item {
+                    position: relative;
+                }
+
+                .roadmap-row-top .roadmap-item::after {
+                    content: '';
+                    position: absolute;
+                    top: 100%;
+                    left: 50%;
+                    width: 2px;
+                    height: 30px;
+                    background: var(--bs-primary);
+                    transform: translateX(-50%);
+                    opacity: 0.3;
+                    pointer-events: none;
+                }
+
+                .roadmap-row-bottom .roadmap-item {
+                    position: relative;
+                }
+
+                .roadmap-row-bottom .roadmap-item::before {
+                    content: '';
+                    position: absolute;
+                    bottom: 100%;
+                    left: 50%;
+                    width: 2px;
+                    height: 30px;
+                    background: var(--bs-primary);
+                    transform: translateX(-50%);
+                    opacity: 0.3;
+                    pointer-events: none;
+                }
+            }
+
+            /* Мобильная адаптация: вертикальная линия */
+            @media (max-width: 767px) {
+                .roadmap {
+                    flex-direction: row;
+                    justify-content: center;
+                    gap: 0;
+                }
+
+                .roadmap-row {
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    padding: 0 !important;
+                }
+
+                .roadmap-row-top,
+                .roadmap-row-bottom {
+                    width: auto;
+                    flex: 1;
+                }
+
+                .roadmap-row-line {
+                    width: auto;
+                    padding: 0 0.5rem;
+                }
+
+                .line-container {
+                    flex-direction: column;
+                    height: 100%;
+                    justify-content: space-between;
+                }
+
+                .line-container::before {
+                    top: 0;
+                    bottom: 0;
+                    left: 50%;
+                    width: 3px;
+                    height: auto;
+                    transform: translateX(-50%);
+                }
+
+                .line-marker {
+                    margin: 1rem 0;
+                }
+
+                .roadmap-item {
+                    max-width: 100% !important;
+                    margin: 1rem 0;
+                }
+
+                /* Убираем вертикальные линии на мобильных */
+                .roadmap-row-top .roadmap-item::after,
+                .roadmap-row-bottom .roadmap-item::before {
+                    display: none;
+                }
+            }
+        </style>
+
+        <!-- ТАЙМЛАЙН С 5 ЭТАПАМИ (теперь второй) -->
+        <section id="timeline" class="my-5">
+            <h2 class="section-title display-6">5 ключевых этапов работы приёмной комисии</h2>
+            <p class="text-secondary mb-4">Нажмите на дату или перемещайте ползунок, чтобы увидеть подробности каждого
+                этапа.</p>
+
+            <div class="timeline-cards" id="timelineCards">
+                <div class="timeline-card" data-index="0">
+                    <div class="day">1</div>
+                    <div class="month">июня</div>
+                    <div class="desc">Старт приема</div>
+                </div>
+                <div class="timeline-card" data-index="1">
+                    <div class="day">10</div>
+                    <div class="month">августа</div>
+                    <div class="desc">Пед. профиль (очн.)</div>
+                </div>
+                <div class="timeline-card" data-index="2">
+                    <div class="day">15</div>
+                    <div class="month">августа</div>
+                    <div class="desc">Очная форма</div>
+                </div>
+                <div class="timeline-card" data-index="3">
+                    <div class="day">20</div>
+                    <div class="month">августа</div>
+                    <div class="desc">Оригинал аттестата</div>
+                </div>
+                <div class="timeline-card" data-index="4">
+                    <div class="day">25</div>
+                    <div class="month">августа</div>
+                    <div class="desc">Заочная форма</div>
+                </div>
+            </div>
+
+            <div class="trackbar-container">
+                <div class="d-flex justify-content-between mb-3 small fw-semibold text-secondary">
+                    <span>1 июня</span>
+                    <span>10 авг</span>
+                    <span>15 авг</span>
+                    <span>20 авг</span>
+                    <span>25 авг</span>
+                </div>
+                <input type="range" class="form-range" id="trackbar" min="0" max="4" value="0" step="1">
+
+                <div class="event-detail-card" id="eventDetail">
+                    <div class="d-flex align-items-center flex-wrap">
+                        <span class="display-5 fw-bold me-4" style="color:var(--bs-primary);" id="eventDay">1
+                            июня</span>
+                        <div>
+                            <h3 id="eventTitle" class="fw-bold">Начало приемной кампании</h3>
+                            <p id="eventDesc" class="mb-0">С 1 июня начинается прием документов на все формы обучения.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mt-3 p-3 bg-white rounded-4" id="eventExtra">
+                        <i class="bi bi-check-circle-fill text-success me-2"></i> Можно подать лично, почтой или онлайн.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Сетка с фотографиями -->
+        <div class="photo-grid row g-3 my-4">
+            <div class="col-6 col-md-3">
+                <img src="img/1.png" class="img-fluid" alt="Колледж">
+            </div>
+            <div class="col-6 col-md-3">
+                <img src="img/2.png" class="img-fluid" alt="Студенты">
+            </div>
+            <div class="col-6 col-md-3">
+                <img src="img/3.png" class="img-fluid" alt="Занятие">
+            </div>
+            <div class="col-6 col-md-3">
+                <img src="img/hero.png" class="img-fluid" alt="Библиотека">
+            </div>
+        </div>
+
+        <!-- Способы подачи + документы -->
+        <div class="row g-4 my-4" id="howto">
+            <div class="col-md-6">
+                <div class="info-card">
+                    <h3 class="fw-bold mb-4" style="color:var(--bs-primary);">
+                        <i class="bi bi-send me-2"></i>Как подать документы
+                    </h3>
+                    <div class="d-flex mb-4">
+                        <i class="bi bi-person-badge fs-1 me-3" style="color:var(--bs-primary);"></i>
+                        <span><strong>Лично:</strong> каб. 114, ул. Мурысева 84</span>
+                    </div>
+                    <div class="d-flex mb-4">
+                        <i class="bi bi-mailbox2 fs-1 me-3" style="color:var(--bs-primary);"></i>
+                        <span><strong>Почтой России:</strong> через операторов почтовой связи</span>
+                    </div>
+                    <div class="d-flex">
+                        <i class="bi bi-envelope-paper fs-1 me-3" style="color:var(--bs-primary);"></i>
+                        <span><strong>Электронно:</strong> скан/фото на email организации или через ЕПГУ</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6" id="docs">
+                <div class="info-card">
+                    <h3 class="fw-bold mb-4" style="color:var(--bs-primary);">
+                        <i class="bi bi-files me-2"></i>Необходимые документы
+                    </h3>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-3"><i class="bi bi-file-earmark-person text-primary me-2 fs-5"></i> Паспорт (копия
+                            + оригинал)</li>
+                        <li class="mb-3"><i class="bi bi-file-earmark-text text-warning me-2 fs-5"></i> Аттестат
+                            (оригинал + копия)</li>
+                        <li class="mb-3"><i class="bi bi-images text-info me-2 fs-5"></i> 4 фото 3x4</li>
+                        <li class="mb-3"><i class="bi bi-file-earmark-binary text-secondary me-2 fs-5"></i> СНИЛС
+                            (копия)</li>
+                        <li class="mb-3"><i class="bi bi-file-earmark-medical text-danger me-2 fs-5"></i> Медицинская
+                            справка 086/у</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Специальности -->
+        <section id="specialties" class="my-5">
+            <h2 class="section-title display-6">Специальности 2026</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="specialty-card">
+                        <i class="bi bi-book fs-1" style="color:var(--bs-primary);"></i>
+                        <h5 class="fw-bold mt-2">Преподавание в начальных классах</h5>
+                        <p class="text-secondary">Учитель начальных классов, очно / заочно</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="specialty-card">
+                        <i class="bi bi-heart-pulse fs-1" style="color:var(--bs-primary);"></i>
+                        <h5 class="fw-bold mt-2">Физическая культура</h5>
+                        <p class="text-secondary">Педагог по физкультуре, тренер</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="specialty-card">
+                        <i class="bi bi-brush fs-1" style="color:var(--bs-primary);"></i>
+                        <h5 class="fw-bold mt-2">Дошкольное образование</h5>
+                        <p class="text-secondary">Воспитатель детей дошкольного возраста</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="specialty-card">
+                        <i class="bi bi-send fs-1" style="color:var(--bs-primary);"></i>
+                        <h5 class="fw-bold mt-2">Адаптивная физическая культура</h5>
+                        <p class="text-secondary">Педагог по адаптивной физической культуре</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="specialty-card">
+                        <i class="bi bi-laptop fs-1" style="color:var(--bs-primary);"></i>
+                        <h5 class="fw-bold mt-2">Информационные системы</h5>
+                        <p class="text-secondary">Программирование, цифровые технологии</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="specialty-card">
+                        <i class="bi bi-globe2 fs-1" style="color:var(--bs-primary);"></i>
+                        <h5 class="fw-bold mt-2">Оператор информационных систем и ресурсов</h5>
+                        <p class="text-secondary">Оператор информационных систем и ресурсов</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Инклюзивное образование -->
+        <section id="inclusive" class="my-5">
+            <h2 class="section-title display-6">Инклюзивное образование</h2>
+            <p class="text-secondary mb-4">ТСПК создаёт равные условия для получения профессионального образования
+                абитуриентами с ограниченными возможностями здоровья и инвалидностью.</p>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="info-card text-center h-100">
+                        <i class="bi bi-universal-access-circle inclusive-icon"></i>
+                        <h5 class="fw-bold mt-3">Доступная среда</h5>
+                        <p class="mb-0">Все корпуса оборудованы пандусами, поручнями, тактильными табличками и
+                            специально оборудованными санитарными комнатами.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="info-card text-center h-100">
+                        <i class="bi bi-laptop inclusive-icon"></i>
+                        <h5 class="fw-bold mt-3">Специализированное ПО</h5>
+                        <p class="mb-0">Предоставляются программы экранного доступа, синтезаторы речи, возможность
+                            увеличения шрифта.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="info-card text-center h-100">
+                        <i class="bi bi-person-walking inclusive-icon"></i>
+                        <h5 class="fw-bold mt-3">Сопровождение тьютора</h5>
+                        <p class="mb-0">Возможно закрепление тьютора на время обучения, помощь в организации учебного
+                            процесса.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="info-card text-center h-100">
+                        <i class="bi bi-pencil-square inclusive-icon"></i>
+                        <h5 class="fw-bold mt-3">Адаптированные вступительные испытания</h5>
+                        <p class="mb-0">Увеличение времени, отдельная аудитория, присутствие ассистента, специальные
+                            форматы заданий.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12">
+                    <div class="info-card">
+                        <h4 class="fw-bold" style="color:var(--bs-primary);">Как поступить?</h4>
+                        <p>При подаче заявления необходимо указать наличие инвалидности и желаемые специальные условия.
+                            Приёмная комиссия совместно с Центром инклюзивного образования разработает индивидуальный
+                            план сопровождения.</p>
+                        <p class="mb-0"><i class="bi bi-telephone"></i> Специалист по инклюзии: <strong>8 (8482)
+                                24-65-93</strong> (доб. 125), email: <strong>inkl@tspk.ru</strong></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- График работы и контакты -->
+        <div class="row g-4 my-4" id="contacts">
+            <div class="col-md-5">
+                <div class="info-card">
+                    <h4 class="fw-bold"><i class="bi bi-clock me-2"></i>График приемной комиссии</h4>
+                    <p><i class="bi bi-geo-alt"></i> ул. Мурысева 84, каб. 114</p>
+                    <p><i class="bi bi-telephone"></i> 8 (8482) 24-65-92</p>
+                    <hr>
+                    <p><strong>Пн–Чт:</strong> 8:30 – 17:00 (обед 12:30–13:00)</p>
+                    <p><strong>Пт:</strong> 8:30 – 16:00 (обед 12:30–13:00)</p>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="info-card">
+                    <h4 class="fw-bold"><i class="bi bi-person-badge me-2"></i>Директор и контакты</h4>
+                    <p class="fw-bold fs-5">Ланчиков Максим Николаевич</p>
+                    <p>тел. приемной: (8482) 24-30-54</p>
+                    <div class="row mt-3">
+                        <div class="col-sm-6"><i class="bi bi-envelope"></i> tspk-zo@yandex.ru (заочное)</div>
+                        <div class="col-sm-6"><i class="bi bi-envelope"></i> Ser53231987@yandex.ru (сайт)</div>
+                        <div class="col-sm-6"><i class="bi bi-telephone"></i> 1 корп. вахта: 24-10-25</div>
+                        <div class="col-sm-6"><i class="bi bi-telephone"></i> 2 корп. вахта: 28-36-44</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Блоки с условиями -->
+        <div class="row g-4 my-4">
+            <div class="col-md-6">
+                <div
+                    class="p-4 bg-white border-start border-4 border-primary rounded-4 shadow-sm h-100 d-flex align-items-center">
+                    <i class="bi bi-pc-display fs-1 me-4" style="color:var(--bs-primary);"></i>
+                    <div>
+                        <h5 class="fw-bold">Для дистанционных программ</h5>
+                        <p class="mb-0">Все студенты обеспечиваются ПК, принтер, сканер, графический планшет,
+                            веб-камера.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div
+                    class="p-4 bg-white border-start border-4 border-black rounded-4 shadow-sm h-100 d-flex align-items-center">
+                    <i class="bi bi-shield-check fs-1 me-4" style="color:var(--bs-primary);"></i>
+                    <div>
+                        <h5 class="fw-bold">Отсрочка от армии</h5>
+                        <p class="mb-0">Предоставляется на весь период обучения (согласно поправкам).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Приказы о зачислении (аккордеон) -->
+        <section class="my-5">
+            <h3 class="fw-bold" style="color:var(--bs-primary);">Приказы о зачислении 2026</h3>
+            <div class="accordion mt-3" id="accordionOrders">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#orderOchn">
+                            Очная форма обучения (бюджет/коммерция)
+                        </button>
+                    </h2>
+                    <div id="orderOchn" class="accordion-collapse collapse" data-bs-parent="#accordionOrders">
+                        <div class="accordion-body">
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-file-earmark-pdf"></i> Приказ о зачислении (очная) — 15 августа</li>
+                                <li><i class="bi bi-file-earmark-pdf"></i> Приказ о зачислении (коммерция) — 20 августа
+                                </li>
+                                <li><i class="bi bi-file-earmark-pdf"></i> Физическая культура (коммерция) — 20 августа
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#orderZaoch">
+                            Заочная форма обучения
+                        </button>
+                    </h2>
+                    <div id="orderZaoch" class="accordion-collapse collapse" data-bs-parent="#accordionOrders">
+                        <div class="accordion-body">
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-file-earmark-pdf"></i> Приказ о зачислении (заочная) — 27 августа
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Навигация по разделу -->
+        <div class="bg-light p-4 rounded-4 my-5">
+            <h5 class="fw-bold mb-3">Навигация по разделу «Приемная комиссия»</h5>
+            <div class="row">
+                <div class="col-sm-4"><i class="bi bi-arrow-right-circle"></i> <a href="#"
+                        class="text-decoration-none">Результаты вступительных испытаний</a></div>
+                <div class="col-sm-4"><i class="bi bi-arrow-right-circle"></i> <a href="#"
+                        class="text-decoration-none">Список рекомендованных к зачислению</a></div>
+                <div class="col-sm-4"><i class="bi bi-arrow-right-circle"></i> <a href="#"
+                        class="text-decoration-none">Приказы о зачислении</a></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4 class="text-white"><i class="fas"></i>ГАПОУ Тольяттинский
+                        социально-педагогический колледж</h4>
+                    <p>Приемная комиссия: ул. Мурысева 84 | Телефон 8 (8482) 24-65-92</p>
+                    <img src="img/startap.svg" alt="">
+                </div>
+                
+                <div class="col-md-3">
+                    <h5 class="text-white">Мы в соцсетях</h5>
+                    <a href="#" class="me-3"><i class="fab fa-vk fa-2x" style="color: #ffffff;"></i></a>
+                    <a href="#" class="me-3"><i class="fab fa-telegram fa-2x" style="color: #ffffff;"></i></a>
+
+                </div>
+            </div>
+            <hr class="bg-secondary">
+            <p class="text-center mb-0">© 2026 ТСПК</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Скрипт для таймлайна (5 этапов) -->
+    <script>
+        (function () {
+            const events = [
+                {
+                    date: '1 июня',
+                    title: 'Начало приемной кампании',
+                    desc: 'С 1 июня стартует прием документов на все формы обучения: очную, заочную, педагогические специальности.',
+                    extra: 'Подать документы можно лично, почтой или в электронной форме (скан/фото на email).'
+                },
+                {
+                    date: '10 августа',
+                    title: 'Окончание приема на педагогические специальности (очная)',
+                    desc: 'Последний день подачи документов на специальности педагогического профиля очной формы.',
+                    extra: 'Для остальных направлений очной формы прием продолжается до 15 августа.'
+                },
+                {
+                    date: '15 августа',
+                    title: 'Завершение приема на очную форму',
+                    desc: 'Последний день подачи документов на очную форму обучения (кроме педагогических).',
+                    extra: 'Прием на заочную форму продолжается до 25 августа.'
+                },
+                {
+                    date: '20 августа',
+                    title: 'Окончание приема оригиналов аттестатов (бюджет)',
+                    desc: 'Последний день подачи оригиналов аттестатов для участия в конкурсе на бюджетные места.',
+                    extra: 'После 20 августа оригиналы принимаются только на коммерцию.'
+                },
+                {
+                    date: '25 августа',
+                    title: 'Финал заочной формы',
+                    desc: 'Окончание приема документов на заочную форму получения образования.',
+                    extra: 'После этой даты заявления не принимаются. Успейте подать!'
+                }
+            ];
+
+            const trackbar = document.getElementById('trackbar');
+            const eventDay = document.getElementById('eventDay');
+            const eventTitle = document.getElementById('eventTitle');
+            const eventDesc = document.getElementById('eventDesc');
+            const eventExtra = document.getElementById('eventExtra');
+            const timelineCards = document.querySelectorAll('.timeline-card');
+
+            function setActiveIndex(index) {
+                timelineCards.forEach((card, i) => {
+                    if (i === index) card.classList.add('active');
+                    else card.classList.remove('active');
+                });
+
+                trackbar.value = index;
+
+                const ev = events[index];
+                eventDay.innerText = ev.date;
+                eventTitle.innerText = ev.title;
+                eventDesc.innerText = ev.desc;
+                eventExtra.innerHTML = `<i class="bi bi-info-circle-fill text-primary me-2"></i>${ev.extra}`;
+
+                const percent = (index / 4) * 100;
+                trackbar.style.background = `linear-gradient(90deg, #0B4F6C ${percent}%, #dee2e6 ${percent}%)`;
+            }
+
+            trackbar.addEventListener('input', (e) => {
+                setActiveIndex(parseInt(e.target.value, 10));
+            });
+
+            timelineCards.forEach((card) => {
+                card.addEventListener('click', () => {
+                    setActiveIndex(parseInt(card.dataset.index, 10));
+                });
+            });
+
+            setActiveIndex(0);
+        })();
+    </script>
+
+    <!-- Дополнительный стиль для пятиколоночной сетки на больших экранах -->
+    <style>
+        @media (min-width: 992px) {
+            .col-lg-2_4 {
+                flex: 0 0 20%;
+                max-width: 20%;
+            }
+        }
+    </style>
+</body>
+
+</html>
